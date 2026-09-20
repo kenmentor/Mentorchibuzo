@@ -7,9 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AppShowcase = () => {
   const sectionRef = useRef(null);
-  const rydeRef = useRef(null);
-  const libraryRef = useRef(null);
-  const ycDirectoryRef = useRef(null);
+  const apexRef = useRef(null);
+  const agentRef = useRef(null);
+  const stefieRef = useRef(null);
+  const oledRef = useRef(null);
 
   useGSAP(() => {
     // Animation for the main section
@@ -20,7 +21,12 @@ const AppShowcase = () => {
     );
 
     // Animations for each app showcase
-    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+    const cards = [
+      apexRef.current,
+      agentRef.current,
+      stefieRef.current,
+      oledRef.current,
+    ];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
@@ -47,38 +53,60 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
+          <div ref={apexRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/project1.png" alt="Apex education platform" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Apex — an education platform helping students study more
+                effectively
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                Built with React, Next.js, Node.js & MongoDB — serving 3,000
+                daily visitors and 2,000+ registered learners.
               </p>
             </div>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
+            <div className="project" ref={agentRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
                   src="/images/project2.png"
-                  alt="Library Management Platform"
+                  alt="Agent With Me rental application"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Agent With Me — fully digital rental application</h2>
+              <p className="text-white-50 md:text-base mt-2">
+                100+ users onboard. React, Node.js & MongoDB.
+              </p>
             </div>
 
-            <div className="project" ref={ycDirectoryRef}>
+            <div className="project" ref={stefieRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img
+                  src="/images/project3.png"
+                  alt="Stefie AI realtime translation engine"
+                />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Stefie AI — realtime translation engine for conferences</h2>
+              <p className="text-white-50 md:text-base mt-2">
+                Live speech translation. Python, React & WebSockets.
+              </p>
+            </div>
+
+            <div className="project" ref={oledRef}>
+              <div className="image-wrapper bg-[#E8F5E9]">
+                <img
+                  src="/images/devices.png"
+                  alt="Oled Studio accented audio generator"
+                />
+              </div>
+              <h2>Oled Studio — realtime Nigerian-accented audio generator</h2>
+              <p className="text-white-50 md:text-base mt-2">
+                Natural accented voice synthesis. Python, React & Three.js.
+              </p>
             </div>
           </div>
         </div>

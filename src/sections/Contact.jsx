@@ -46,6 +46,42 @@ const Contact = () => {
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
+        <p className="text-white-50 mt-6 text-center md:text-left">
+          Prefer direct contact? Email me at{" "}
+          <a
+            href="mailto:mentorchibuzo@gmail.com"
+            className="underline hover:text-white"
+          >
+            mentorchibuzo@gmail.com
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://github.com/kenmentor"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-white"
+          >
+            GitHub
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://www.linkedin.com/in/mentor-chibuzo-865835320/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-white"
+          >
+            LinkedIn
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://x.com/kenmentorc97179"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-white"
+          >
+            X
+          </a>
+        </p>
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
